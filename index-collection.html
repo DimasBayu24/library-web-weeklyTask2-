@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Book</title>
+    <link rel="shortcut icon" href="img/bookshelf.png" type="image/x-icon">
+<link rel="stylesheet" href="./delete_modal.css">
+<link rel="stylesheet" href="./edit_modal.css">
+  </head>
+<link rel="stylesheet" href="style-collection.css">
+<!-- <script type="text/javascript" src="./index.js"></script> -->
+
+<body>
+    <div class="wrapper">
+        <section class="baliho">
+            <img class="baliho-container" src="./img/dilan-cover-collection.png" alt="">
+            <a href="index.html">
+                <div class="btn-back">
+                    <img class="btn-back-arrow" src="./img/arrow-back.png" alt="">
+                </div>
+            </a>
+            <div class="config-option">
+                <a href="#" id="edit" class="config-edit">Edit</a>
+                <!-- Trigger/Open The Modal -->
+                <a href="#" id="delete" class="config-delete">Delete</a>
+            </div>
+        </section>
+        <img class="cover-book-dilan" src="./img/dilan-full-collection.png" alt="">
+        <section class="book-desc">
+            <div class="book-desc-summ">
+                <article class="article-head">
+                    <div class="head-book-name">
+                        <div class="head-book-genre">
+                            <div class="novel-text">Novel</div></div>
+                        <div class="head-book-title">DILAN 1990</div>
+                        <div class="head-book-date">30 Juni 2019</div>
+                    </div>
+                    <div class="head-availability">Available</div>
+                </article>
+                <article class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est rutrum ultrices. Donec laoreet enim a massa dapibus, cursus egestas dui pulvinar. Proin sit amet accumsan lectus. Nullam auctor auctor consequat. Donec semper magna erat, sed fringilla lacus pretium eget. Cras porttitor, nibh sit amet interdum bibendum, nibh velit accumsan tellus, vel vehicula tellus leo vitae ipsum. Praesent sit amet libero sed orci ullamcorper efficitur. Pellentesque in euismod purus, sit amet ultrices tortor. Vestibulum ante dui, tempor at dui id, tincidunt euismod diam. Integer pellentesque massa nibh, ac eleifend odio malesuada sed. Phasellus orci sem, cursus nec orci ut, accumsan facilisis lacus. Nullam at elementum nibh, ac gravida felis. In sagittis rhoncus nisi tempus dignissim. Sed fringilla consequat ante vitae lobortis. Cras posuere ligula vel enim suscipit malesuada. Vivamus non nulla ut ante imperdiet euismod quis nec massa.</article>
+            </div>
+            <div class="book-desc-borrow">
+                <div class="borrow-text">Borrow</div>
+            </div>
+        </section>
+    </div>
+ 
+
+  <!-- Edit Modal -->
+<div id="editModal" class="edit-modal">
+
+    <!-- Modal content -->
+    <div class="edit-modal-content">
+      <div class="edit-modal-header">
+        <span class="edit-close"></span>
+        <h2>Edit Data</h2>
+      </div>
+      <div class="edit-modal-body">
+        <div class="edit-url">
+          <p class="editUrl">Url Image</p>
+          <input type="text">
+        </div>
+        <div class="edit-title">
+          <p class="editTitle">Title</p>
+          <input type="text">
+        </div>
+        <div class="edit-desc">
+          <p class="editDesc">Description</p>
+          <input type="text" style="height: 150px;">
+        </div>
+      </div>
+      <div class="edit-modal-footer">
+        <h2 style="width: 104px; display: flex; justify-content: center;
+           align-items: center; border-radius: 20px; background-color: #F4CF5D;;">Save</h2>
+      </div>
+    </div>
+  
+  </div>
+  <!-- end of Edit Modal -->
+ <!-- Delete  Modal -->
+ <div id="deleteModal" class="delete-modal">
+
+  <!-- DeleteModal content -->
+  <div class="delete-modal-content">
+    <div class="delete-modal-header">
+      <span> </span>
+      <span class="delete-close"></span>
+
+    </div>
+    <div class="delete-modal-body">
+      <img src="img/checked.png" alt="" srcset="">
+      <h2>Data <span>Dilan 1990</span> Berhasil Dihapus!</h2>
+    </div>
+
+  </div>
+
+</div>
+<!-- end of Modal -->
+  <script src="./deleteModal.js" >
+ 
+  </script>
+  <script src="./editModal.js"></script>
+</body>
+
+</html>

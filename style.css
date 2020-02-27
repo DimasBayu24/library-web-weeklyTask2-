@@ -1,0 +1,374 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #7386D5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+
+
+.profile-pic{
+    margin-top: 85px;
+    margin-left: 125px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.sidebar-item-nick, .sidebar-item-explore, .sidebar-item-history, .sidebar-item-addBook{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.container-fluid-edited{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item-booklibrary{
+    display: flex;
+    align-items: center;
+}
+
+.icon-bookshelf{
+    width: 50px;
+    height: 50px;
+}
+
+/* carousel section -------> */
+.ul {
+    list-style: none;
+}
+.carousel-container {
+    height: 500px;
+    display: grid;
+    grid-area: carousel-section;
+    grid-template-columns: 1fr;
+  
+    /* background-color: black; */
+}
+
+.carousel-image-card img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    /* z-index: 0; */
+}
+  
+.carousel-text {
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 0px 0px 15px 15px;
+}
+  
+.carousel-text p {
+    margin-top: 10px; 
+}
+ 
+.carousel-card {
+    border-radius: 15px;
+    width: 66%;
+    height: 500px;
+  
+    margin-right: 10px;
+    background: #ccc;
+    counter-increment: carousel-card;
+}
+
+/* end of carousel section -------> */
+
+.section-word-listBook{
+margin-top: 5%;
+margin-left: 5%;
+color: #424242;
+}
+
+.section-item-listBook{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+    margin-top: 5%;
+}
+
+.listBook-item-box1{
+    width: 330px;
+    border-radius: 15px;
+    height: 350px;
+    
+}
+
+.listBook-item-box2{
+    width: 330px;
+    border-radius: 15px;
+    height: 350pxt;
+    
+}
+
+.listBook-item-box3{
+    width: 330px;
+    border-radius: 15px;
+    height: 350px;
+    
+}
+
+.listBook-item-box4{
+    width: 330px;
+    border-radius: 15px;
+    height: 350px;
+}
+
+.box1-img, .box2-img, .box3-img, .box4-img{
+    width: 330px;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.box1-head, .box4-head{
+    margin-left: 100px;
+}
+
+.box2-head{
+    margin-left: 40px;
+}
+
+.box3-head{
+    margin-left: 100px;
+}
+
+.nav-item-library{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.nav-item-search{
+    display: flex;
+    align-items: center;
+    width: 406px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.nav-item-search input{
+    margin-left: 10px;
+    border-radius: 20px;
+    width: inherit;
+    border: none;
+}
+
+.nav-item-search-magni{
+    display: flex;
+    margin-left: 10px;
+
+}
+.nav-item-search-wordsearch{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ----- modal style ----- */
+
+.modal-body-url-img, .modal-body-title, .modal-body-desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .modal-content-edited{
+    width: 700px;
+    height: 800px;
+} */

@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    margin: 0;
+}
+.container {
+    display: flex;
+}
+
+.section-img{
+    width: 1168px;
+    height: 937px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unsplash-login {
+    position: absolute;
+    z-index: -1;
+    width: 1168px;
+    height: 937px;
+}
+
+.img-head{
+    width: 750px;
+    height: 318px;
+    font-family: Airbnb Cereal App;
+    font-size: 90px;
+    line-height: 83px;
+    color: #F9F9F9;
+    margin-top: 150px;
+    margin-left: 50px;
+
+}
+
+.img-footer {
+    width: 340px;
+    height: 30px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+
+}
+
+.section-reglog{
+    display: flex;
+    flex-direction: column;
+}
+
+.bookshelf-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 640px;
+}
+
+.flex-reglog-word{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 138px;
+    margin-top: 90px;
+    margin-left: 180px;
+}
+
+.reglog-regis{
+    font-family: Airbnb Cereal App;
+    font-size: 64px;
+    line-height: 83px;
+    color: #424242;
+}
+
+.reglog-regis-small{
+    font-family: Airbnb Cereal App;
+    font-size: 17px;
+    line-height: 22px;
+    color: #424242;
+}
+
+.input-box{
+    width: 417px;
+    height: 320px;
+    margin-left: 185px;
+    margin-top: 50px;
+}
+
+.box-username{
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    height: 80px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.username{
+    font-family: Airbnb Cereal App;
+    font-size: 24px;
+    line-height: 22px;
+    color: #D0CCCC;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.fullName{
+    font-family: Airbnb Cereal App;
+    font-size: 24px;
+    line-height: 22px;
+    color: #D0CCCC;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.password{
+    font-family: Airbnb Cereal App;
+    font-size: 24px;
+    line-height: 22px;
+    color: #D0CCCC;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.email{
+    font-family: Airbnb Cereal App;
+    font-size: 24px;
+    line-height: 22px;
+    color: #D0CCCC;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.box-fullName{
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    height: 80px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.box-email{
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    height: 80px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.box-password{
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    height: 80px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+
+
+.regis-sign{
+    display: flex;
+    flex-direction: row;
+    width: 225px;
+    height: 36px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 185px;
+}
+
+.box-signUp{
+    width: 110px;
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D0CCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.box-login{
+    width: 110px;
+    height: 36px;
+    background: #000000;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faded-phrase{
+    width: 327px;
+    height: 63px;
+    margin-left: 185px;
+    margin-top: 100px;
+    font-family: Airbnb Cereal App;
+font-size: 17px;
+line-height: 22px;
+
+color: #D0CCCC;
+
+}
+
+.input-box input:focus{
+    outline: none;
+}

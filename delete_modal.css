@@ -1,0 +1,74 @@
+/* The Modal (background) */
+.delete-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.delete-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: -55px auto;
+    padding: 30px;
+    /* border: 1px solid #888; */
+    border-radius: 20px;
+    width: 60%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s */
+}
+
+.delete-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.delete-modal-header .close {
+    font-size: 40pt;
+    color: red;
+}
+
+.delete-modal-header .close:hover {
+    cursor: pointer;
+}
+
+.delete-modal-body {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.delete-modal-body img {
+    margin-bottom: 20px;
+}
+
+.delete-modal-body h2 {
+    font-weight: lighter;
+    font-size: 26pt;
+}
+
+.delete-modal-body h2 span {
+    font-weight: bold;
+}

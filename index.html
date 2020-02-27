@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Arkademy" content="IE=edge">
+<link rel="shortcut icon" href="img/bookshelf.png" type="image/x-icon">
+    <title>WebDesign-Arkademy</title>
+    <link rel="stylesheet" href="./carousel.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css.map"> -->
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+     
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <img class="profile-pic" src="img/foto.jpg" alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" data-toggle="collapse" aria-expanded="false">
+                        <div class= sidebar-item-nick>Dimas Bayu</div></a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <div class= sidebar-item-explore>Explore</div></a>
+                </li>
+                <li>
+                    <a href="#"><div class= sidebar-item-history>History</div></a>
+                </li>
+                <div class="sidebar-item-addBook">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Add Book*
+                  </button>
+                </div>
+                
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="container-fluid-edited">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <nav class=nav-item-category>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">All Categories</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Horror</a>
+                        </li>
+                        <li>
+                            <a href="#">Mystery</a>
+                        </li>
+                        <li>
+                            <a href="#">Adult</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class=nav-item-list>
+                    <a href="#pageListmenu" data-toggle="collapse" aria-expanded="false">All List</a>
+                    <ul class="collapse list-unstyled" id="pageListmenu">
+                        <li>
+                            <a href="#">Kid</a>
+                        </li>
+                        <li>
+                            <a href="#">Teen</a>
+                        </li>
+                        <li>
+                            <a href="#">18++</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-item-search">
+                    <div class=nav-item-search-magni><i class="fas fa-search"></i></div>
+                   <input placeholder="Search book ..." type="text" name="" id="">
+                    <!-- <p class=nav-item-search-wordsearch>Search book ...</p> -->
+                </nav>
+                <nav class="nav-item-booklibrary">
+                    <img class="icon-bookshelf" src="img/bookshelf.png" alt="">
+                    <p class="nav-item-library">Library</p>
+                </nav>
+                    </div>
+                </div>
+            </nav>
+
+              <!-- Carousel Section -->
+
+        <section class="carousel-container">
+
+            <div class="card-carousel-wrapper js-flickity"
+                data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+                <div class="carousel-card">
+                    <a href="index-collection.html" class="carousel-image-card">
+                        <img src="./img/carousel1.png" alt="carousel img">
+                    </a>
+                    <div class="carousel-text">
+                        <h2>Dilan 1990</h2>
+                        <p>Pidi Baiq</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card">
+                    <div class="carousel-image-card">
+                        <img src="./img/carousel2.png" alt="carousel img">
+
+                    </div>
+                    <div class="carousel-text">
+                        <h2>Ubur-Ubur Lembur</h2>
+                        <p>Raditya Dika</p>
+
+                    </div>
+                </div>
+
+                <div class="carousel-card">
+                    <div class="carousel-image-card">
+                        <img src="./img/carousel3.png" alt="carousel img">
+
+                    </div>
+                    <div class="carousel-text">
+                        <h2>Laskar Pelangi</h2>
+                        <p>Andrea hirata</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+           
+            <h2 class="section-word-listBook">List Book</h2>
+        <section class="section-item-listBook">
+            <div class="listBook-item-box1">
+                <img class="box1-img" src="./img/box1-dilan-cover.png" alt="carousel img">
+                <h4 class="box1-head">Dilan 1990</h4>
+                <p class="box1-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id</p>
+
+            </div>
+            <div class="listBook-item-box2">
+                <img class="box2-img" src="./img/box2-manson-cover.png" alt="carousel img">
+                <h4 class="box2-head">Sebuah Seni Untuk ...</h4>
+                <p class="box2-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id</p>
+            </div>
+            <div class="listBook-item-box3">
+                <img class="box3-img" src="./img/box3-native-cover.png" alt="carousel img">
+                <h4 class="box3-head">React Native</h4>
+                <p class="box3-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id</p>
+            </div>
+            <a href="index-collection.html" class="listBook-item-box4">
+                <img class="box4-img" src="./img/box1-dilan-cover.png" alt="carousel img">
+                <h4 class="box4-head">Dilan 1990</h4>
+                <p class="box4-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id</p>
+            </a>
+
+        </section>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <!-- <div class="modal-content-edited"> -->
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLongTitle">Add Data</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-url-img">
+              <h5 class="body-url">Url Image</h5>
+              <div class="modal-url-search">
+                  <input placeholder=". . . " type="text" name="" id="">
+                </div>
+          </div>
+          <div class="modal-body-title">
+            <h5 class="body-title">Title</h5>
+            <div class="modal-title-search">
+            <input placeholder=". . . " type="text" name="" id="">
+          </div>
+        </div>
+
+          <div class="modal-body-desc">
+            <h5 class="body-desc">Description</h5>
+            <div class="modal-desc-search">
+            <input placeholder=". . . " type="text" name="" id="">
+          </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <!-- end of modal ----->
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js.map"></script>
+    <script src="./bootstrap/js/bootstrap.min.js.map"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script src="./carousel.js"></script> 
+</body>
+
+</html>
